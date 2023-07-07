@@ -1,33 +1,27 @@
 .wrapper {
-	padding: 20px 20px;
-	margin: 0px 0px 5px 0px;
+	padding: 20px;
+	margin: 0px 0px 10px 0px;
 
 	display: flex;
+	gap: 10px;
 	align-items: center;
-	gap: 20px;
 
-	width: 300px;
-	cursor: pointer;
-
-	background: #031956;
+	background: #041955;
 	border-radius: 15px;
 }
 
 .icon {
 	width: 22px;
 	height: 22px;
+
 	border: 3px solid #fff;
 	border-radius: 50%;
 }
 
-.iconActive {
-	background: #fff;
-}
-
-.task {
+.text {
 	color: #fff;
 }
 
-.taskLine {
+.textCompleted {
 	text-decoration: line-through;
 }
