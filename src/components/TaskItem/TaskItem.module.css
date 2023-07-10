@@ -1,27 +1,43 @@
-.wrapper {
-	padding: 20px;
-	margin: 0px 0px 10px 0px;
+.item {
+  padding: 20px;
+  margin: 0px 0px 10px 0px;
 
-	display: flex;
-	gap: 10px;
-	align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-	background: #041955;
-	border-radius: 15px;
+  background: #041955;
+  border-radius: 15px;
 }
 
-.icon {
-	width: 22px;
-	height: 22px;
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
-	border: 3px solid #fff;
-	border-radius: 50%;
+.ckeck {
+  width: 22px;
+  height: 22px;
+
+  border: 3px solid #fff;
+  border-radius: 50%;
 }
 
 .text {
-	color: #fff;
+  color: #fff;
 }
 
 .textCompleted {
-	text-decoration: line-through;
+  text-decoration: line-through;
+}
+
+.trash {
+  cursor: pointer;
+}
+
+.trash:hover {
+  color: rgb(126, 2, 2);
+
+  transition: color 0.3s ease;
 }

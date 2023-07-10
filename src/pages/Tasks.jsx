@@ -15,10 +15,16 @@ export default function Tasks() {
 		setTasks(copy);
 	}
 
+	const removeTask = (id) => {
+		const copy = [...tasks];
+		const newArrayOfTasks = copy.filter((task) => task.id !== id);
+		setTasks(newArrayOfTasks);
+	}
+
 	return (
 		<div>
-			{tasks.map(task => 
-				<TaskItem task={task} key={task.id} changeComplete={changeIsCompleted}/>
+			{tasks.map(task =>
+				<TaskItem task={task} key={task.id} changeComplete={changeIsCompleted} removeTask={removeTask} />
 			)}
 		</div>
 	)
