@@ -7,9 +7,15 @@ body {
 
 .container {
   margin: 0 auto;
+
+  position: relative;
   width: 400px;
   height: 750px;
 
   background: #3450a1;
   border-radius: 50px;
+}
+
+.tasks {
+	padding: 0px 30px;
 }
